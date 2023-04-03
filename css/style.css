@@ -1,0 +1,101 @@
+.logo {
+    width: 100px;
+    height: 110px;
+    margin: 50px auto;
+}
+.menu { /* div는 기본값 width : 100%로 설계되어 있음 */
+    background-color: #005891;    /* 배경-색상: 색상코드 */
+    text-align: center;             /* 텍스트-정렬 : 가운데 */
+    height: 50px;                   /* 높이 : 50px */
+    line-height: 50px;              /* 행-높이: 50px */
+    margin: 50px 0;                 /* (바깥)여백 : 상하 50px, 좌우 0 */
+}
+.menu a {  /* a: 파랑색, 밑줄 스타일을 태생적으로 갖음 */
+    color: white;                 /* 색상: 흰색 */
+    text-decoration: none;          /* 텍스트-꾸밈: 없음 */
+    margin: 0 10px;                 /* (바깥)여백 : 상하0 , 좌우 10px */
+    font-size: 14px;                /* 글자-크기 : 14px */
+    font-weight: bold;              /* 글자-두께 : 두껍게 */
+}
+.menu a:hover {  /* 의사(pseudo-class) 선택자 */
+    color: #fcff00;
+}
+.hero_img {
+    width: 800px;   /* 가로 폭 : */
+    height: 500px;  /* 세로 높이 : */
+    margin: 0 auto; /* (바깥)여백 : 상하 0, 좌우 자동으로(계산해서~) */
+}
+/* 문서내에 h1, p 각각 1개씩만 있을때 */
+.title {
+    text-align: center;
+    margin: 50px 0;
+}
+.title h1 {
+    font-size: 22px;
+}
+.title p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555; /* #555 와 #555555 는 같음. */
+}
+.clips {
+    width: 650px;
+    margin: 0 auto;
+    font-size: 0;    /* 글자-크기 : 0 (없음, 표시x, 글자마다 자동으로 생성되는 여백 x) */
+    display: flex;   /* 표시 : 플렉스 (기본값: 가로로 나열해서 표현) */
+}
+.clip:nth-child(2) { /* 2개의 clip이 있음, 그중 첫번째 clip */
+    margin-left: 50px;
+}
+.clip h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.clip h2, .clip p {
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social_media {
+    text-align: center;      /* 텍스트-정렬: (수평)가운데 */    
+    margin: 30px 0;
+}
+.social_media a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+.social_media a:nth-child(4) {
+    margin-right: 0;
+}
+
+.contact {
+    text-align: center;
+}
+.contact h2 {
+    font-size: 15px;
+    color: #005891;    
+    text-transform: uppercase;   /* 텍스트-변형: 대문자로 vs lowercase, capitalize : 첫글자만 대문자 */
+}
+.contact p {
+    font-weight: bold;
+    font-size: 30px;
+    color: #005891;
+}
+hr {
+    margin: 50px 0;
+    height: 1px;
+    background-color: #005891;
+    border: 0;        /* 테두리 : 없음 */
+}
+.info {
+    text-align: center;
+}
+.info p:nth-child(1) {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.info p:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 11px;
+}
