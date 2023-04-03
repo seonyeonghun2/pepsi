@@ -99,3 +99,34 @@ hr {
     text-transform: uppercase;
     font-size: 11px;
 }
+
+/* media query */
+@media screen and (max-width: 360px) {
+    .menu {
+        margin: 30px 0 20px 0;
+    }
+    .hero_img {
+        width: 100%;
+    }
+    .hero_img img {
+        width: 100%;
+    }
+    .hero_img {
+        height: auto; /* 높이 : 알아서 계산된 높이 (자연스럽게) */
+    }
+    .clips {
+        max-width: 300px; /* 최대-넓이 : 300px, 300px 미만 폭에서는 100% 크기 */
+        flex-direction: column; /* 플렉스-방향: 컬럼(=열, 수직) */
+    }
+    .clip:nth-child(2) {
+        margin-left: 0;
+    }
+    hr {
+        margin: 30px 0 0 0;
+    }
+    .info {
+        background-color: #005891;
+        color: white;
+        padding: 30px 0;
+    }
+}
