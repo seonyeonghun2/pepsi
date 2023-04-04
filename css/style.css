@@ -56,6 +56,18 @@
     margin: 20px 0;
     text-align: center;
 }
+.clip a {
+    font-size: 16px; /* 웹 글꼴의 기본 크기 */
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
 
 .social_media {
     text-align: center;      /* 텍스트-정렬: (수평)가운데 */    
@@ -100,7 +112,7 @@ hr {
     font-size: 11px;
 }
 
-/* media query */
+/* media query : mobile style */
 @media screen and (max-width: 360px) {
     .menu {
         margin: 30px 0 20px 0;
@@ -118,8 +130,16 @@ hr {
         max-width: 300px; /* 최대-넓이 : 300px, 300px 미만 폭에서는 100% 크기 */
         flex-direction: column; /* 플렉스-방향: 컬럼(=열, 수직) */
     }
+    .clip {       
+        min-height: 300px;
+    }
     .clip:nth-child(2) {
         margin-left: 0;
+    }
+    
+    .clip a:hover {
+        font-size: 14px;
+        background-color: #005891
     }
     hr {
         margin: 30px 0 0 0;
